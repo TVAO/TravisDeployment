@@ -1,14 +1,13 @@
 # Specify language and versions to use where x is any tagged version and master is latest from source 
 language: go
 go:
-  - 1.x
-  - 1.9.x 
+  #- 1.x
+  #- 1.9.x 
   - master
-go_import_path: GOPATH/src/exercises/session-07-deployment/TravisDeployment
-sudo: false
-before_script:
-  - go vet ./...
-  
+#go_import_path: GOPATH/src/exercises/session-07-deployment/TravisDeployment
+#sudo: false
+#before_script:
+#  - go vet ./...
 script: 
   - go test -v ./...
 install:
