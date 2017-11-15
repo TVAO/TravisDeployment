@@ -8,6 +8,7 @@ go_import_path: GOPATH/src/exercises/session-07-deployment/TravisDeployment
 sudo: false
 before_script:
   - go vet ./...
+  
 script: 
   - go test -v ./...
 install:
